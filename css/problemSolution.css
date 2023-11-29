@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+section {
+  font-size: 1.6rem;
+}
+
+section#problem-solution {
+  background-color: #011d44;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: space-around;
+  padding: 8rem 9.5rem;
+}
+
+#problem-solution h1 {
+  color: #e0ffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+}
+
+#problem-solution h1 span {
+  color: #5ecbf8;
+}
+
+#problem-solution aside {
+  display: grid;
+  gap: 5rem;
+  width: 57.6rem;
+}
+
+#problem-solution p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+#problem-solution button {
+  background-color: #007bc9;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem 2.4rem;
+  cursor: pointer;
+  width: 27.6rem;
+}
+
+#problem-solution button:hover {
+  background-color: #005ea6;
+}
+
+#problem-solution button a {
+  color: #fff8e7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#problem-solution img {
+  box-shadow: 0px 0px 100px 60px rgba(255, 255, 255, 0.2);
+  border-radius: .6rem;
+}
+
+#problem-identification {
+  background-color: #fff8e7;
+  height: 65rem;
+  padding: 6rem 9.5rem;
+  display: grid;
+}
+
+#problem-identification h2 {
+  color: #001b42;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+  text-align: center;
+}
+
+#problem-identification h2 span {
+  color: #007bc9;
+}
+
+#problem-identification #content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+#problem-identification #content p {
+  width: 50rem;
+  color: #000;
+}
+
+#problem-identification img {
+  width: 57.6rem;
+}

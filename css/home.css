@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+section {
+  font-size: 1.6rem;
+}
+
+section#intro {
+  background-image: url(../src/homeDoctorImage.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 9.5rem;
+  padding-top: 40rem;
+  padding-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4rem;
+  flex-direction: column;
+}
+
+h1 {
+  color: #e0ffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.9rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+}
+
+h1 span {
+  color: #5ecbf8;
+}
+
+#intro p {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  width: 87rem;
+}
+
+#intro button{
+  background-color: #007BC9;
+  border: none;
+  border-radius: .6rem;
+  padding: 1rem 8.1rem;
+  cursor: pointer;
+}
+
+#intro button:hover{
+  background-color: #005EA6;
+}
+
+#intro button a{
+  color: #FFF8E7;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#impact-opening{
+  background: linear-gradient(
+    180deg,
+    rgb(98, 189, 228) 0.3%,
+    rgb(0, 28, 66) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6rem 9.5rem;
+}
+
+#impact-opening aside{
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+#impact-opening h2 {
+  color: #E0FFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+}
+
+#impact-opening p {
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+
+  width: 42.6rem;
+}
+
+#impact-opening button{
+  background-color: #007BC9;
+  border: none;
+  border-radius: .6rem;
+
+  padding: 1rem 5.6rem;
+  width: 27.6rem;
+}
+
+#impact-opening button:hover{
+  background-color: #005EA6;
+}
+#impact-opening button a{
+  color: #FFF8E7;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+#impact-opening iframe{
+  width: 67.6rem;
+  height: 45rem;
+}

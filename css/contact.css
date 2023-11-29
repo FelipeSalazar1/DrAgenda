@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+section {
+  font-size: 1.6rem;
+}
+
+section#IA{
+  background-color: #FFF8E7;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-around;
+  padding: 6rem 9.5rem;
+}
+
+h1 {
+  color: #5ECBF8;
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+}
+
+h1 span {
+  color: #001B42;
+}
+
+#IA aside {
+  display: grid;
+  gap: 5rem;
+  width: 57.6rem;
+}
+
+#IA p {
+  color: #001B42;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+#IA button {
+  background-color: #007bc9;
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem 2.4rem;
+  cursor: pointer;
+  width: 27.6rem;
+}
+
+#IA button:hover {
+  background-color: #005ea6;
+}
+
+#IA button a {
+  color: #fff8e7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#IA img{
+  box-shadow: 0px 0px 88px 60px rgba(0,0,0,0.3);
+}
+
+section#form {
+  background-color: #002963;
+  display: grid;
+  place-content: center;
+  padding: 6rem 9.5rem;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem 2rem 1.69rem 2rem;
+  border-radius: 5px;
+  gap: 3rem;
+  align-items: center;
+  gap: 3rem;
+}
+
+#contact-form h2 {
+  color: #001B42;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  width: 47.8rem;
+}
+
+#contact-form #input-fields {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  color: #000;
+  font-weight: 400rem;
+  font-size: 1rem;
+  gap: 3rem;
+}
+
+#contact-form #input-fields .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#contact-form #input-fields .input-container .required-signal {
+  color: red;
+}
+
+#contact-form #input-fields .input-container .text-input-field {
+  width: 32rem;
+  height: 2.625rem;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+}
+#contact-form #input-fields #check-input-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+#contact-form #input-fields #check-input-field label {
+  color: #676666;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 400;
+  padding-top: 1.3rem;
+}
+
+#contact-form #submit-button {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2.4rem;
+  gap: 1rem;
+  width: 14.9375rem;
+  border: none;
+  border-radius: 6px;
+  background: #45b1e8;
+  font-family: "Roboto";
+  font-size: 1.7rem;
+  color: #fff8e7;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
+}
+
+#contact-form #submit-button:hover {
+  background: #2d98ce;
+}
