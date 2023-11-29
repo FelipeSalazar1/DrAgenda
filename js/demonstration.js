@@ -1,17 +1,16 @@
-const sectionMessages = document.querySelector("#demonstration");
+const sectionMessages = document.querySelector("#messages");
 const inputMessage = document.querySelector("#message");
 const buttonMessage = document.querySelector("#send-message");
 const formMessage = document.querySelector("form");
-
 const BASE_URL = "https://api.openai.com/v1/chat/completions";
 const API_KEY = "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";
 
 formMessage.addEventListener("submit", (e) => e.preventDefault());
 buttonMessage.addEventListener("click", insertMessageInHTML);
 
+
 inputMessage.addEventListener("keyup", (event) => {
   const hasValue = inputMessage.value !== "";
-
   buttonMessage.classList.toggle("color-white", hasValue);
   buttonMessage.classList.toggle("color-gray", !hasValue);
   buttonMessage.disabled = !hasValue;
@@ -60,7 +59,7 @@ async function postMessageGPT(message) {
         role: "system",
       },
     ],
-    model: model,
+    model: "gpt-3.5-turbo",
     temperature: 0.2,
     max_tokens: 2000,
     top_p: 1,

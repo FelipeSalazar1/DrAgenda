@@ -8,10 +8,13 @@ function loadPage(page) {
     .then((response) => response.text())
     .then((html) => {
       document.getElementById("container").innerHTML = html;
+      const script = document.createElement("script");
+      script.src = `../js/${page}.js`;
+      script.type = "module";
+      script.defer = true;
+      document.body.appendChild(script);
     });
 }
 
-// Load the initial page
 const initialPage = window.location.hash.substring(1) || "home";
 loadPage(initialPage);
-

@@ -8,7 +8,7 @@
   font-size: 62.5%;
 }
 
-section {
+section#demonstration {
   font-size: 1.6rem;
 }
 
@@ -77,8 +77,14 @@ h1 span {
   display: grid;
   place-content: center;
   align-items: center;
-  gap: 45rem;
   padding: 6rem 9.5rem;
+}
+
+#messages {
+  display: grid;
+  place-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 form {
