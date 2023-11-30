@@ -26,7 +26,7 @@ section#intro {
   flex-direction: column;
 }
 
-h1 {
+#intro h1 {
   color: #e0ffff;
   font-family: "Montserrat", sans-serif;
   font-size: 4.9rem;
@@ -34,7 +34,7 @@ h1 {
   line-height: 5.8rem;
 }
 
-h1 span {
+#intro h1 span {
   color: #5ecbf8;
 }
 
