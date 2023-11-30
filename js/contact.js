@@ -4,7 +4,6 @@ const emailField = document.getElementById("email");
 const telephoneField = document.getElementById("telephone");
 const text = document.querySelector("#contact-form h2");
 
-
 submitButton.addEventListener("click", function () {
   validateForm();
 });
@@ -18,34 +17,22 @@ function addClassError(field) {
 }
 
 function validateForm() {
-  addClassError(nameField);
-  addClassError(emailField);
-  addClassError(telephoneField);
+  const fields = [nameField, emailField, telephoneField];
+  const fieldNames = ["Nome", "Email", "Telefone"];
 
-  if (nameField.classList.contains("error")) {
-    nameField.style.border = "1px solid red";
-    alert("Por favor, preencha o campo Nome.");
-  }
-  if (emailField.classList.contains("error")) {
-    emailField.style.border = "1px solid red";
-    alert("Por favor, preencha o campo Email.");
-  }
-  if (telephoneField.classList.contains("error")) {
-    telephoneField.style.border = "1px solid red";
-    alert("Por favor, preencha o campo Telefone.");
-  }
+  fields.forEach((field, index) => {
+    addClassError(field);
+    if (field.classList.contains("error")) {
+      field.style.border = "1px solid red";
+      alert(`Por favor, preencha o campo ${fieldNames[index]}.`);
+    }
+  });
 
-  if (
-    !telephoneField.classList.contains("error") &&
-    !emailField.classList.contains("error") &&
-    !nameField.classList.contains("error")
-  ) {
-    nameField.style.border = "#ccc";
-    emailField.style.border = "#ccc";
-    telephoneField.style.border = "#ccc";
+  if (!fields.some((field) => field.classList.contains("error"))) {
+    fields.forEach((field) => {
+      field.style.border = "#ccc";
+      field.value = "";
+    });
     text.innerHTML = "Obrigado por entrar em contato conosco!";
-    nameField.value = "";
-    emailField.value = "";
-    telephoneField.value = "";
   }
 }

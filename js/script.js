@@ -9,8 +9,7 @@ function loadPage(page) {
     .then((html) => {
       document.getElementById("container").innerHTML = html;
       const script = document.createElement("script");
-      script.src = `../js/${page}.js`;
-      script.type = "module";
+      script.src = `./js/${page}.js`;
       script.defer = true;
       document.body.appendChild(script);
     });
