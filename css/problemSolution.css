@@ -99,8 +99,10 @@ section#problem-solution {
 }
 
 #problem-identification #content p {
-  width: 50rem;
   color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
 #problem-identification img {
