@@ -106,5 +106,5 @@ section#problem-solution {
 }
 
 #problem-identification img {
-  width: 57.6rem;
+  max-width: 57.6rem;
 }

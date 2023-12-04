@@ -72,8 +72,9 @@ h1 span {
 
 section#form {
   background-color: #002963;
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   padding: 6rem 9.5rem;
 }
 
@@ -158,4 +159,35 @@ section#form {
 
 #contact-form #submit-button:hover {
   background: #2d98ce;
+}
+
+#colaborators h2 {
+  text-align: center;
+
+  color: #E0FFFF;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.8rem;
+  margin-bottom: 6rem;
+}
+
+#colaborators table{
+  display: flex;
+  gap: 2rem;
+}
+
+#colaborators table tbody tr td{
+  display: grid;
+  place-content: center;
+
+  color:  #FFF;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#colaborators table tbody td:first-child {
+  padding-bottom: 3rem;
 }
