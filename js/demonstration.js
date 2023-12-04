@@ -4,7 +4,7 @@ const buttonMessage = document.querySelector("#send-message");
 const formMessage = document.querySelector("form");
 
 const BASE_URL = "https://api.openai.com/v1/chat/completions";
-const API_KEY = "";
+const API_KEY = "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";
 
 formMessage.addEventListener("submit", (e) => e.preventDefault());
 buttonMessage.addEventListener("click", insertMessageInHTML);
